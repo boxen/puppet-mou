@@ -1,5 +1,7 @@
 # Mou Puppet Module for Boxen
 
+[![Build Status](https://travis-ci.org/boxen/puppet-mou.png?branch=master)](https://travis-ci.org/boxen/puppet-mou)
+
 Install [Mou](http://mouapp.com/), a lightweight Markdown client for Mac
 
 ## Usage
