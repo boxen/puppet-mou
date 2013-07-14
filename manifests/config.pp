@@ -1,7 +1,7 @@
 # Mou application config
 #
 class mou::config($theme = '', $css = '') {
-  require boxen::config
+  include boxen::config
 
   $dir       = "/Users/${::boxen_user}/Library/Application Support/Mou"
   $cssdir    = "${dir}/CSS"

@@ -18,7 +18,7 @@ include mou::themes
 You can change Mou preferences using this command:
 
 ```puppet
-mou::config { 'Mou':
+mou::preferences { 'Mou':
   theme => 'Solarized (Dark)+',
   css => 'GitHub2'
 }

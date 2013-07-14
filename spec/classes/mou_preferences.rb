@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'mou::config' do
+describe 'mou::preferences' do
   let(:facts) { default_test_facts }
 
   let(:plistfile) { '/Users/testuser/Library/Preferences/com.mouapp.Mou.plist' }
