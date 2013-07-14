@@ -1,6 +1,6 @@
 # Mou application preferences
 #
-class mou::preferences($theme = '', $css = '') {
+define mou::preferences($theme = '', $css = '') {
   include mou::config
 
   property_list_key { 'Mou Theme':
