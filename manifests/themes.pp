@@ -12,13 +12,15 @@ class mou::themes {
   }
 
   file { $mou::config::cssdir:
-    ensure => directory,
-    source => 'puppet:///modules/mou/CSS',
-    purge  => false
+    ensure  => directory,
+    source  => 'puppet:///modules/mou/CSS',
+    purge   => false,
+    recurse => true,
   }
   file { $mou::config::themesdir:
-    ensure => directory,
-    source => 'puppet:///modules/mou/Themes',
-    purge  => false
+    ensure  => directory,
+    source  => 'puppet:///modules/mou/Themes',
+    purge   => false,
+    recurse => true,
   }
 }

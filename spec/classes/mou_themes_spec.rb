@@ -11,15 +11,17 @@ describe 'mou::themes' do
     should contain_file(moudir).with_ensure('directory')
 
     should contain_file(cssdir).with({
-      :ensure => 'directory',
-      :source => 'puppet:///modules/mou/CSS',
-      :purge  => false
+      :ensure  => 'directory',
+      :source  => 'puppet:///modules/mou/CSS',
+      :purge   => false,
+      :recurse => true,
     })
 
     should contain_file(themesdir).with({
-      :ensure => 'directory',
-      :source => 'puppet:///modules/mou/Themes',
-      :purge  => false
+      :ensure  => 'directory',
+      :source  => 'puppet:///modules/mou/Themes',
+      :purge   => false,
+      :recurse => true,
     })
 
   end
