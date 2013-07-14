@@ -8,6 +8,7 @@ Install [Mou](http://mouapp.com/), a lightweight Markdown client for Mac
 
 ```puppet
 include mou
+include mou::themes
 ```
 
 ## Required Puppet Modules
